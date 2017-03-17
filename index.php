@@ -1,11 +1,10 @@
 <?php
 
 	 $task=[
-	 'Drill'=> 'Hang picture',
-	 'Due'=>'Tomorrow',
-	 'Assigned_to'=>'Han',
-	 'Completed'=>'No']
+	 'title'=> 'Hang Picture',
+	 'due'=>'Today',
+	 'assigned_to'=>'Minh Han',
+	 'completed'=> False,
+	 ]
 	 ;
 require 'index.view.php';	 
-
-Home

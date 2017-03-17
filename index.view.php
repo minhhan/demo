@@ -5,9 +5,31 @@
 
 </head>
 <body>
- 	<ul><?php foreach($task as $item=>$content): ?>
- 	<li><strong><?= $item ?>:</strong> <?= $content?></li>
- 	<?php endforeach ?>
- 	</ul>
+
+	<h1>Task For The Day</h1>
+
+
+
+	<ul>
+	<li>
+		<strong>Name: </strong> <?= $task['title'];?>
+	</li>
+
+	
+	<li>
+		<strong>Due date: </strong> <?= $task['due'];?>
+	</li>
+
+	
+	<li>
+		<strong>Person Responsible: </strong> <?= $task['assigned_to']; ?>
+	</li>
+
+
+	<li>
+		<strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
+	</li>
+
+	</ul>
 </body>
 </html>
